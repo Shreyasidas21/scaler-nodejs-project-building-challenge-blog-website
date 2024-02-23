@@ -40,7 +40,8 @@ function displayBlogs(blogs) {
 
         // Image
         const postImage = document.createElement('img');
-        postImage.src = blog.image; // Assuming your blog object has an 'image' property
+        postImage.src = blog.image;
+        // postImage.src = "./images/img2.jpg"
         postImage.alt = '';
         postImage.classList.add('post-img');
 
