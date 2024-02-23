@@ -11,7 +11,7 @@ const Blog = require('./schema');
 const staticPath = path.join(__dirname,"../public");
 app.use(express.static(staticPath));
 
-require('./blogdata');
+// require('./blogdata');
   
 // const addBlogs = async(blogs)=>{
 //     await Blog.insertMany(blogs);
