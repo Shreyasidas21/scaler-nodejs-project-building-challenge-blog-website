@@ -40,7 +40,7 @@ function displayBlogs(blogs) {
 
         // Image
         const postImage = document.createElement('img');
-        postImage.src = blog.image; // Assuming your blog object has an 'image' property
+        postImage.src = blog.image;
         postImage.alt = '';
         postImage.classList.add('post-img');
 
@@ -69,19 +69,12 @@ function displayBlogs(blogs) {
         const profile = document.createElement('div');
         profile.classList.add('profile');
 
-        // Profile Image
-        const profileImage = document.createElement('img');
-        profileImage.src = blog.authorImage; // Assuming your blog object has an 'authorImage' property
-        profileImage.alt = '';
-        profileImage.classList.add('profile-img');
-
         // Profile Name
         const profileName = document.createElement('span');
         profileName.classList.add('profile-name');
         profileName.textContent = blog.author;
 
         // Appending child elements
-        profile.appendChild(profileImage);
         profile.appendChild(profileName);
 
         postBox.appendChild(postImage);
